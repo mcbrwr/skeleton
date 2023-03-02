@@ -1,0 +1,17 @@
+import { {{name}} } from "./{{name}}";
+
+import { Meta, Story } from "@storybook/react";
+import { {{name}}Props } from "./types";
+import { {{name}}MockData } from "./mockData";
+
+export default {
+  component: {{name}},
+  title: "{{section}}/{{name}}",
+} as Meta;
+
+const Template: Story<{{name}}Props> = (args) => <{{name}} {...args} />;
+
+export const TheStory = Template.bind({});
+TheStory.args = {
+  ...{{name}}MockData,
+};

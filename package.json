@@ -1,0 +1,16 @@
+{
+  "name": "@mcbrwr/skeleton",
+  "version": "0.0.1",
+  "description": "Use skeleton files for components to provide a consistent architecture.",
+  "main": "bin/skeleton.js",
+  "repository": "https://github.com/mcbrwr",
+  "author": "M.C. Brouwer",
+  "license": "MIT",
+  "bin": {
+    "skeleton": "./bin/index.js"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.7",
+    "recursive-copy": "^2.0.14"
+  }
+}

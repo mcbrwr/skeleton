@@ -1,0 +1,26 @@
+import { {{name}} as Tpl } from "./{{name}}";
+
+import { Meta, Story } from "@storybook/react";
+import { tags } from "tags";
+import { {{name}}Props } from "./types";
+import { {{name}}MockData } from "./mockData";
+
+export default {
+  component: Tpl,
+  title: "{{section}}/{{name}}",
+  parameters: {
+    previewTabs: {
+      "storybook/docs/panel": {
+        hidden: true,
+      },
+    },
+    tag: tags.todo,
+  },
+} as Meta;
+
+const Template: Story<{{name}}Props> = (args) => <Tpl {...args} />;
+
+export const {{name}} = Template.bind({});
+{{name}}.args = {
+  ...{{name}}MockData,
+};

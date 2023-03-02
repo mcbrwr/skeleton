@@ -1,0 +1,31 @@
+import { RichText } from "@components/RichtText";
+import { Page } from "@framework/Page";
+import { Container } from "@layouts/Container";
+import { Contact } from "@sections/Contact";
+import font from "@tokens/font.module.css";
+import space from "@tokens/space.module.css";
+import cx from "classnames";
+
+export const {{name}} = () => {
+  const pageProps = {
+    title: "Five Talks Motion - {{name}}",
+    description:
+      "Five Talks {{name}}",
+  };
+  return (
+    <Page {...pageProps}>
+      {/* Header */}
+      <Container size="md" className={cx(space.mt_5xl_6xl)}>
+        <h1 className={font.heading_5_325}>{{name}}</h1>
+        <RichText width="readable" size="md" className={space.mt_xs_s}>
+          <p>
+            Proident irure et consequat ipsum. Nulla excepteur deserunt ipsum est eiusmod labore aliquip voluptate sit sint exercitation excepteur incididunt.
+          </p>
+        </RichText>
+      </Container>
+
+      {/* Contact */}
+      <Contact />
+    </Page>
+  );
+};

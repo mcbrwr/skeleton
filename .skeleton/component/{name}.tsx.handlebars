@@ -1,0 +1,9 @@
+import cx from "classnames";
+import styles from "./styles.module.css";
+import { {{name}}Props } from "./types";
+
+export const {{name}} = ({className, ...rest}: {{name}}Props) => {
+  return (
+    <div className={cx(styles.bazooka, className)} {...rest}>{{name}}</div>
+  );
+};

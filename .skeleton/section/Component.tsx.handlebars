@@ -1,0 +1,18 @@
+import { RichText } from "@components/RichtText";
+import { Container } from "@layouts/Container";
+import font from "@tokens/font.module.css";
+import space from "@tokens/space.module.css";
+import cx from "classnames";
+import styles from "./styles.module.css";
+import { {{name}}Props } from "./types";
+
+export const {{name}} = ({className, ...rest}: {{name}}Props) => {
+  return (
+    <Container size="md" space className={cx(styles.container, className)} {...rest}>
+      <h2 className={styles.title}>{{name}}</h2>
+      <RichText size="md" width="readable">
+        <p>Hello</p>
+      </RichText>
+    </Container>
+  );
+};
